@@ -69,3 +69,11 @@ Concepts:
 
 ## Kubernetes Fundamentals
 -   
+
+
+## github repos
+```
+https://github.com/stacksimplify/aws-eks-kubernetes-masterclass
+https://github.com/stacksimplify/docker-fundamentals
+https://github.com/stacksimplify/kubernetes-fundamentals
+```
