@@ -68,4 +68,54 @@ Concepts:
 -   
 
 ## Kubernetes Fundamentals
--   
+-   imperative 
+        kubectl 
+        pod
+        RS
+        Deployment
+        Service
+-   declarative
+        YAML & Kubectl
+        Pod
+        RS
+        Deployment
+        Services
+## EKS STORAGE: EBS CSI DRIVERS
+
+##  AWS RDS DATABASES
+
+##  AWS EKS Network Design with EKS workload & RDS Database
+
+##  AWS ESK Network Design with EKS Workload RDS & ELB Network Load balancer
+
+##  AWS EKS Network Design with EKS workload RDS & ELB Application Load Balancer & Route53 , Ingress & ExternalDNS
+
+##  EKS deployment OPtion - Mixed mode - 3 Apps
+
+##  EKS vs ECS
+
+##  Stages in Release Process
+
+##  AWS Developer tools or code services
+
+##  Microservices
+
+##  Microservices Deployment on AWS EKS (UMS ingress service, UMS node port service, MySQL external Name service, Notification: ClusterIP Service, SMTP: External Name Service)
+
+##  kubernetes Daemonsets (X-Ray ClusterIP Services) - Service Map
+
+##  X-Ray Traces on Microservices
+
+##  Microservice- Canary Deployment
+
+##  HPA / VPA / Cluster AutoScaler
+
+##  FluentD daemonSet (Cluster logs)
+
+github repo: 
+```
+                https://github.com/stacksimplify/aws-eks-kubernetes-masterclass
+                https://github.com/stacksimplify/docker-fundamentals
+                https://github.com/stacksimplify/kubernetes-fundamentals
+````
+ 
