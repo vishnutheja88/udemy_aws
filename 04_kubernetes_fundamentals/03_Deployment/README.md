@@ -106,4 +106,24 @@ kubectl rollout history deployment/nginx-deployment
 ## Pause & Resume Deployments
 - if we want to make multiple changes to our deployment, we can pause the deployment make all changes and resume it.
 - we are going to update our application version from v2 to v3 as part  of example.
+```
+kubectl rollout history deployment nginx-deployment
+kubectl get rs
+```
+  - **Pause Deployment and make changes**
+  ```
+  kubectl rollout pause deployment/nginx-deployment
+  kubectl set image deployment/nginx-deployment kubenginx=nginx:1.27.1 --record=true
+  #check the rollout history for the deployment
+  kubectl rollout history deployment/nginx-deployment
+  kubectl get rs
+
+  # changes in deployments
+  kubectl set resources deployment/nginx-deployment -c=kubenginx --limits=cpu=200m,memory=50Mi
+  kubectl rollout history deployment/nginx-deployment
+  kubectl rollout resume deployment/nginx-deployment
+
+  #check now deployment history
+  kubectl rollout history deployment/nginx-deployment
+  ```
 
