@@ -24,4 +24,4 @@
 
 
 
-![Image](images/image.png)
+![Image](https://github.com/vishnutheja88/udemy_aws/blob/mac_air/images/image.png)
