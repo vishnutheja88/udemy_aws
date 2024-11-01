@@ -73,3 +73,9 @@ docker images
 docker push <docker-hub-id>/mynginx:v1 
 ```
 
+
+```
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+```
+

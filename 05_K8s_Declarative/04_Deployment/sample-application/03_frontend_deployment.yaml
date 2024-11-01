@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend 
+  labels:
+    app: frontend
+    tier: frontend-tier
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend
+  template: # pod specifications
+    metadata:
+      labels:
+        app: frontend
+        tier: frontend-tier
+    spec:
+      containers:
+        - name: frontend-app
+          image: vsihnutheja88/u_frontend:v1
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 80        
