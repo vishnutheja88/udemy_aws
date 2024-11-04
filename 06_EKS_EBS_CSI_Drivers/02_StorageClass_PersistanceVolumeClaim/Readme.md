@@ -1,6 +1,8 @@
 # StorageClass, PVC, ConfigMap and MySQL
 
 - create MySQL Database with PVC using EBS Volume
+
+## yaml files
 | Kubernetes Object | YAML file|
 |-------------------|----------|
 | Storage Class| 01-storage-class.yaml|
