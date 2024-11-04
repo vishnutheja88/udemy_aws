@@ -1,6 +1,6 @@
 # StorageClass, PVC, ConfigMap and MySQL
 
-- create MySQL Database with PVC using EBS Volume
+- Create MySQL Database with PVC using EBS Volume
 
 ## yaml files
 | Kubernetes Object | YAML file|
@@ -10,3 +10,9 @@
 |ConfigMap| 03-usermanagement-configmap.yaml|
 |Deployment, Environment Variable, Volumes, Volume Mounts|04-mysql-deployment.yaml|
 |ClusterIP service| 05-mysql-clusterip-service.yaml|
+
+## Create MySQL Deployment Manifests
+- Environment Variables
+- Volume
+- Volume Mount
+
