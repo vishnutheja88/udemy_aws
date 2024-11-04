@@ -1,7 +1,7 @@
 ## Create MySQL database and Connect with MySQL DB
 
 ## Usermanagement Diagram
-![Test Image1]("ebs_csi_driver.png")
+![Test Image1](https://github.com/vishnutheja88/udemy_aws/blob/mac_air/06_EKS_EBS_CSI_Drivers/03_MySQL_DB_UserManagement/ebs_csi_driver.png)
 
 ```
 # create mysql db
