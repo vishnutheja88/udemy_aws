@@ -47,4 +47,6 @@ kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernete
 
 # Verify ebs-csi pods running
 kubectl get pods -n kube-system
+    ebs-csi-controller-xxxx 4/4
+    ebs-csi-node-xxxx       3/3
 ```
