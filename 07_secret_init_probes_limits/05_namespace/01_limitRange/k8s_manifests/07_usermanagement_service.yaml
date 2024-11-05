@@ -1,0 +1,15 @@
+apiVesion: v1
+kind: Service
+metadata:
+  name: usermgnt-service
+  namespace: dev
+  labels:
+    app: usermgnt-restapp
+spec:
+  type: NodePort
+  selector:
+    app: usermgnt-restapp
+  ports:
+    - port: 8095
+      targetPort: 8095
+      # nodePort: 31244
