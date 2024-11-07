@@ -112,10 +112,17 @@ Concepts:
 
 ##  FluentD daemonSet (Cluster logs)
 
-github repo: 
+**github repo**: 
 ```
-                https://github.com/stacksimplify/aws-eks-kubernetes-masterclass
-                https://github.com/stacksimplify/docker-fundamentals
-                https://github.com/stacksimplify/kubernetes-fundamentals
-````
+    https://github.com/stacksimplify/aws-eks-kubernetes-masterclass
+    https://github.com/stacksimplify/docker-fundamentals
+    https://github.com/stacksimplify/kubernetes-fundamentals
+```
  
+
+## JOB
+- intitue
+- Redhat
+- Cisco
+- Wiz.io
+- Paloalto networks

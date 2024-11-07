@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: product
+  template:
+    metdata:
+      labels:
+        app: product
+    spec:
+      containers:
+        - name: product-container
+          image: <dockerimage>:<tag>
+          ports:
+            - containerPort: 5001
