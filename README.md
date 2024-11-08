@@ -126,3 +126,17 @@ Concepts:
 - Cisco
 - Wiz.io
 - Paloalto networks
+
+### AWS Trends 2025
+* Generative AI (sagemaker)
+* Serverless and Edge Computing (Lambda)
+* AI driven cloud management (predicting potential issues, workload optimization, enhance security)
+* DevOps, Cloud Computing, Cybersecurity, Generative AI, Artificial Intelligence
+
+### Data Engineer
+* Amazon Athena (apache hudi, iceberg: parque  files): sonwflake, databricks(opentable format)
+* Real Time Data Streaming (kafka, flink, )
+* Data Orchestration, workflow management (mage-ai, prefectH, daster-io, apache airflow: opensource)- using apache spark or python can transform data form source db to destination db.
+* Integration LLMs into DataProduct: 
+
+* Apache kafka, AWS lambda, AWS Glue, Spark create using **Terraform or Ansible**.
