@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+spec:
+  name: viewer-role-binding
+roleRef:
+  kind: ClusterRole
+  name: viewer-role # user group/role
+  apiGroup: rbac.authorization.k8s.io
+subjects:
+  - kind: Group # service accounts
+    name: viewer-role-bind
+    apiGroup: rbac.authorization.k8s.io

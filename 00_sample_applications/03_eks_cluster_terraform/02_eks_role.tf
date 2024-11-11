@@ -19,7 +19,7 @@ POLICY
 
 # create policy
 resource "aws_iam_role_policy_attachment" "eks_policy" {
-  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusetrPolicy"
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
   role = aws_iam_role.eks_role.name
 }
 
@@ -27,7 +27,7 @@ resource "aws_iam_role_policy_attachment" "eks_policy" {
 resource "aws_eks_cluster" "eks_cluster" {
   name = "${local.env}_${local.eks_name}"
   version = local.eks_version
-  role_arn = aws_iam_role.eks_role.name
+  role_arn = aws_iam_role.eks_role.arn
 
   vpc_config {
     endpoint_private_access = false
@@ -89,7 +89,7 @@ resource "aws_eks_node_group" "eks_node_group_general" {
   node_role_arn = aws_iam_role.eks_nodes.arn
 
   subnet_ids = [
-    aws_subnet.private_zone1, aws_subnet.private_zone2
+    aws_subnet.private_zone1.id, aws_subnet.private_zone2.id, aws_subnet.public_zone1.id, aws_subnet.public_zone2.id
   ]
   capacity_type = "ON_DEMAND"
   instance_types = ["t3.small"]

@@ -143,29 +143,29 @@ Concepts:
 
 
 ## Need to Complete
-[*] fluentd
-[]  argocd
-[]  cilium
-[]  coreDNS
-[]  Open Policy Agent (OPA)
-[]  Vitess (database)
-[]  Dragonfly
-[]  Thanos (monitoring)
-[]  OpenTelemetry
+- [x] fluentd
+- [x] argocd
+- [] cilium
+- []  coreDNS
+- []  Open Policy Agent (OPA)
+- []  Vitess (database)
+- []  Dragonfly
+- []  Thanos (monitoring)
+- []  OpenTelemetry
 
-[]  cloudzero - cost analysis 
-[]  kubecost    -   cost across multiple cloud providers
-[]  Loft Labs   -   cost monitoring with auto-stopping
-[]  Helm        -   Command line tools
-[]  kubens/kubectx -   quickly switch between cluster and namespaces 
-[]  stern       -   specify pod id and container id 
-[]  K9s         -   navigating, observing and managing deployed apps easier
-[]  Ansible kubespray - integrates with Ansible playbook, provisioning tool, inventory and domain manaement. 
-[]  Kops        -   Installation, upgrades, and manage k8s cluster
-[]  Contour     -   High performance ingress controller
-[]  Gloo Mesh   -   Istio based K8s service mesh
-[]  Calico*     -   K8s Networking and Security Tool
-[]  longhorn    -   Distributed block storage
-[]  Velero      -   Backup and migrate PV for k8s
-[]  Akamai Linode (Kubernetes Cluster) less price and less time to deploy compare with any other k8s cloud providers
-[]  
+- []  cloudzero - cost analysis 
+- []  kubecost    -   cost across multiple cloud providers
+- []  Loft Labs   -   cost monitoring with auto-stopping
+- []  Helm        -   Command line tools
+- []  kubens/kubectx -   quickly switch between cluster and namespaces 
+- []  stern       -   specify pod id and container id 
+- []  K9s         -   navigating, observing and managing deployed apps easier
+- []  Ansible kubespray - integrates with Ansible playbook, provisioning tool, inventory and domain manaement. 
+- []  Kops        -   Installation, upgrades, and manage k8s cluster
+- []  Contour     -   High performance ingress controller
+- []  Gloo Mesh   -   Istio based K8s service mesh
+- []  Calico*     -   K8s Networking and Security Tool
+- []  longhorn    -   Distributed block storage
+- []  Velero      -   Backup and migrate PV for k8s
+- []  Akamai Linode (Kubernetes Cluster) less price and less time to deploy compare with any other k8s cloud providers
+- []  

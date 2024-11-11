@@ -65,8 +65,8 @@ rules:
     resources: ["deployments", "configmaps", "pods", "secrets", "services"]
     verbs: ["get", "list", "watch"]
 ```
-
-* attach role to rolebinding
+* for best practices is not to use IAM users with long-term credentials.
+* attach role to RoleBinding
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -75,10 +75,10 @@ spec:
   name: viewer-role-binding
 roleRef:
   kind: ClusterRole
-  name: viewer-role
+  name: viewer-role # user group/role
   apiGroup: rbac.authorization.k8s.io
 subjects:
-  - kind: Group
+  - kind: Group # service accounts
     name: viewer-role-bind
     apiGroup: rbac.authorization.k8s.io
 ```
@@ -109,7 +109,9 @@ subjects:
 ```
 
 ## HPA
-
+-   need metrics server for autoscaling in the k8s cluster. metric server configuration using helm charts.
+-   use memory or CPU usage metrics to decide when we need to scale up our application.
+-   when you create a deployment or a statefulset you must have the resource block defined. HPA will use the request section to calculate the CPU and memory usage of Pod, not the limits.
 
 ## Cluster AutoScaler
 
