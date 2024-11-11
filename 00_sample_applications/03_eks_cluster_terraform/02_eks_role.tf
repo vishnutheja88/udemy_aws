@@ -1,3 +1,4 @@
+# Creaeting EKS cluster along with NodeGroup 
 # eks iam-role
 resource "aws_iam_role" "eks_role" {
   name = "${local.env}-${local.eks_name}-eks-cluster"
