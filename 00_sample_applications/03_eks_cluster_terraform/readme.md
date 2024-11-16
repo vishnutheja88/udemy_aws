@@ -1,4 +1,11 @@
 ## EKS Cluster
+- Create role assume from **eks.amazonaws.com**
+    - attach policies to above role **AmazonEKSClusterPolicy**
+    - Create EKS Cluster.
+-   Create Node Group
+    - Create role for node group assume from **ec2.amazonaws.com**
+    - attach policies for above node-group-role: **AmazonEKSWorkerNodePolicy, AmazonEKS_CNI_Policy, AmazonEC2ContainerRegistryReadOnly**
+    - create node-group using above node-group-role and above cluster name.
 
 ### IAM 
 * IAM Role: vishnu-eks-cluster 
@@ -22,11 +29,9 @@
     **Policy** : **AmazonWorkerNodePolicy**
     **Policy** : **AmazonEKS_CNI_Policy**
     **Policy** : **AmazonEC2ContainerRegistryReadOnly**
-    
-
 ```
 aws sts get-caller-identity
-aws esk update-kubeconfig --region us-east-1 --name dev_demo_cluster
+aws eks update-kubeconfig --region us-east-1 --name dev_demo_cluster
 kubectl get pods
 kubectl auth can-i "*" "*" 
 ```
@@ -38,9 +43,9 @@ kubectl auth can-i "*" "*"
 - we will map IAM user with K8s Cluster RBAC. 
 
 
-### userpolicy with minimum permission
+### user-policy with minimum permission
 
-* iam > create user> user > attache following poicy
+* iam > create user> user > attache following policy
 ```yaml
 {
     "Version": "2012-10-17",
