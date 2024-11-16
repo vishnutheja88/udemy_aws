@@ -1,69 +1,76 @@
 # AWS EKS Kubernetes MasterClass | DevOps Microservices
-Concepts: 
+- Concepts: 
     DOCKER, EBS, ELB, NLB, ALB, Fargate, ECR, CloudWatch, Route53, Certificate Manager, Ingress, Autoscaling, SNS
+
 ## Kubernetes Concepts
 ```
-    Architecture
-    Pods
-    ReplicaSets
-    Deployments
-    NodePortService
-    ClusterIP service
-    External name Service
-    Ingress Service
-    Ingress SSL
-    Ingress and External DNS
-    Kubectl-imperative
-    Declaration with YAML
-    Secrets
-    init containers
-    Probes
-    Requests and Limits
-    Namespaces
-    Limit Ranges
-    Resource Quota
-    Storage Classes
-    Persistent Volumes
-    PVC
-    LoadBalancers
-    Annotations
-    Canary Deployments
-    HPA
-    VPA
-    Daemonsets
-    Fluentd for logs
-    ConfigMaps
+Architecture
+Pods
+ReplicaSets
+Deployments
+NodePortService
+ClusterIP service
+External name Service
+Ingress Service
+Ingress SSL
+Ingress and External DNS
+Kubectl-imperative
+Declaration with YAML
+Secrets
+init containers
+Probes
+Requests and Limits
+Namespaces
+Limit Ranges
+Resource Quota
+Storage Classes
+Persistent Volumes
+PVC
+LoadBalancers
+Annotations
+Canary Deployments
+HPA
+VPA
+Daemonsets
+Fluentd for logs
+ConfigMaps
 ```
+
 ## AWS Services
+
 ```
-    EKS
-    RDS
-    ELB
-    Fargate
-    SNS
-    ALB
-    NLB
-    Cloud Watch
-    SNS
-    Route53
+EKS
+RDS
+ELB
+Fargate
+SNS
+ALB
+NLB
+Cloud Watch
+SNS
+Route53
 ```
+
 ## DEVOPS
 ```
     AWS Code Commit
     AWS Code Build
     AWS Code Pipeline
 ```
+
 ## MicroServices
 ```
     Service Discovery
     Distributed Tracing
     Canary Deployments
 ```
+
 ##  Introduction
 -   Install AWS CLI
 -   Create EKS Cluster and NodeGroups
 -   EKS Cluster Pricing
 -   Delete EKS Cluster and NodeGroup
+
 ##  Docker Fundamentals
 -   
 
@@ -114,9 +121,9 @@ Concepts:
 
 **github repo**: 
 ```
-    https://github.com/stacksimplify/aws-eks-kubernetes-masterclass
-    https://github.com/stacksimplify/docker-fundamentals
-    https://github.com/stacksimplify/kubernetes-fundamentals
+https://github.com/stacksimplify/aws-eks-kubernetes-masterclass
+https://github.com/stacksimplify/docker-fundamentals
+https://github.com/stacksimplify/kubernetes-fundamentals
 ```
  
 
@@ -143,29 +150,28 @@ Concepts:
 
 
 ## Need to Complete
-- [x] fluentd
-- [x] argocd
-- [] cilium
-- []  coreDNS
-- []  Open Policy Agent (OPA)
-- []  Vitess (database)
-- []  Dragonfly
-- []  Thanos (monitoring)
-- []  OpenTelemetry
+- [x]  fluentd
+- [x]  argocd
+- [x]  cilium
+- [x]  coreDNS
+- [x]  Open Policy Agent (OPA)
+- [x]  Vitess (database)
+- [x]  Dragonfly
+- [x]  Thanos (monitoring)
+- [x]  OpenTelemetry
 
-- []  cloudzero - cost analysis 
-- []  kubecost    -   cost across multiple cloud providers
-- []  Loft Labs   -   cost monitoring with auto-stopping
-- []  Helm        -   Command line tools
-- []  kubens/kubectx -   quickly switch between cluster and namespaces 
-- []  stern       -   specify pod id and container id 
-- []  K9s         -   navigating, observing and managing deployed apps easier
-- []  Ansible kubespray - integrates with Ansible playbook, provisioning tool, inventory and domain manaement. 
-- []  Kops        -   Installation, upgrades, and manage k8s cluster
-- []  Contour     -   High performance ingress controller
-- []  Gloo Mesh   -   Istio based K8s service mesh
-- []  Calico*     -   K8s Networking and Security Tool
-- []  longhorn    -   Distributed block storage
-- []  Velero      -   Backup and migrate PV for k8s
-- []  Akamai Linode (Kubernetes Cluster) less price and less time to deploy compare with any other k8s cloud providers
-- []  
+- [x]  cloudzero - cost analysis 
+- [x]  kubecost    -   cost across multiple cloud providers
+- [x]  Loft Labs   -   cost monitoring with auto-stopping
+- [x]  Helm        -   Command line tools
+- [x]  kubens/kubectx -   quickly switch between cluster and namespaces 
+- [x]  stern       -   specify pod id and container id 
+- [x]  K9s         -   navigating, observing and managing deployed apps easier
+- [x]  Ansible kubespray - integrates with Ansible playbook, provisioning tool, inventory and domain management. 
+- [x]  Kops        -   Installation, upgrades, and manage k8s cluster
+- [x]  Contour     -   High performance ingress controller
+- [x]  Gloo Mesh   -   Istio based K8s service mesh
+- [x]  Calico*     -   K8s Networking and Security Tool
+- [x]  longhorn    -   Distributed block storage
+- [x]  Velero      -   Backup and migrate PV for k8s
+- [x]  Akamai Linode (Kubernetes Cluster) less price and less time to deploy compare with any other k8s cloud providers

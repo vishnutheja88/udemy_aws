@@ -119,8 +119,9 @@ subjects:
 -   when you create a deployment or a statefulset you must have the resource block defined. HPA will use the request section to calculate the CPU and memory usage of Pod, not the limits.
 
 ## Cluster AutoScaler & Pod Identities
--   Cluser autosclaer is an external component that you need to additionally install on you EKS cluster to automatically scale up and down your cluster.
--   AWS EKS cluster nodegroup created as regular AWS Autoscaling groups with maximum, minimum and desire size properties.
+-   Cluster autosclaer is an external component that you need to additionally install on you EKS cluster to automatically scale up and down your cluster.
+-   AWS EKS cluster node-group created as regular AWS Autoscaling groups with maximum, minimum and desire size properties.
+
 ### OpenId Connector
 -   If an openid connect provider on the IAM side, then create an IAM role and establish trust with particular namespace and thr RBAC service account. OpenID Connector provider was having to use an annotations with the IAM role ARN on the Service Account.
 -   **new approach** : EKS pod identities that we can use to grant access. use the eks addon **aws_eks_addon** using terraform.
