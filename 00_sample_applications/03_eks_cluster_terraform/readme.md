@@ -58,7 +58,7 @@ kubectl auth can-i "*" "*"
     ]
 }
 ```
-* create k8s viewr role
+* create k8s viewer role
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
