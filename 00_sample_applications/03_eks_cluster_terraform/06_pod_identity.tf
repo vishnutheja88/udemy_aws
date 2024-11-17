@@ -4,8 +4,8 @@ resource "aws_eks_addon" "pod_identity" {
     addon_version = "v1.2.0-eksbuild.1"
 }
 
-# aws eks describe-addon-versions --region us-east-1 --addon-name eks-pod-identity-agent
-
+# aws eks describe-addon-versions --region us-east-1 --addon-name eks-pod-identity-agent | grep -i addonversion
+# kubectl get daemonset eks-pod-identity-agent -n kube-system
 # Cluster Auto Scaler
 resource "aws_iam_role" "cluster_autoscaler" {
     name = "${aws_eks_cluster.eks_cluster.name}-cluster-autoscaler"
