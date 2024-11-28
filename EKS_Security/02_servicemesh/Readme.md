@@ -19,5 +19,5 @@
 
 ### SideCar Container
 - Extend the main container functionality without any impact
-[sidecar imag](/images/sidecar.png)
+![Test Image 1](/images/sidecar.png)
 
