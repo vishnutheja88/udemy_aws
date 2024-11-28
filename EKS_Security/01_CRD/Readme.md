@@ -31,7 +31,7 @@ horizontalpodautoscalers            hpa          autoscaling/v2                 
 
 # How CRD will work in Kubernetes
 ![Test Image 1](images/CRD.png)
-[GitHub Pages](https://github.com/kubernetes/sample-controller).
+[Kubernetes: SampleController](https://github.com/kubernetes/sample-controller).
 - The **CustomResourceDefination** API resources allow you to define custom resource.
     - Define **CustomResouceDefination** using YAML
     - Create custom resources using YAML
