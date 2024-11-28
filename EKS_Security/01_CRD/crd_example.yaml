@@ -1,0 +1,8 @@
+apiVersion: vishnu.io/v1alpha1
+kind: Greeting
+metadata:
+  name: vishnu-greetings
+spec:
+  emailToGreet: vishnutheja88@gmail.com
+  messageToGreet: HelloVishnu
+  replicas: 1

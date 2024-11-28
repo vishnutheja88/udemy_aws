@@ -112,11 +112,36 @@ subjects:
     ]
 }
 ```
-
+  <!-- labels:
+    app: php-apache
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+    meta.helm.sh/release-name: metrics-server
+    meta.helm.sh/release-namespace: kube-system
+  creationTimestamp: "2024-11-12T15:36:31Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/instance: metrics-server
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: metrics-server
+    app.kubernetes.io/version: 0.7.2
+    helm.sh/chart: metrics-server-3.12.2
+  name: metrics-server
+ -->
 ## HPA
 -   need metrics server for autoscaling in the k8s cluster. metric server configuration using helm charts.
 -   use memory or CPU usage metrics to decide when we need to scale up our application.
 -   when you create a deployment or a statefulset you must have the resource block defined. HPA will use the request section to calculate the CPU and memory usage of Pod, not the limits.
+
+```sh
+kubectl create ns php-apache
+kubens php-apache
+kubectl create deployment php-apache --image=k8s.gcr.io/hpa-example
+kubectl patch deployment php-apache -p='{"spec":{"template":{"spec":{"containers":[{"name":"hpa-example","resources":{"requests":{"cpu":"50m"}}}]}}}}'
+kubectl create service nodeport php-apache --tcp=80
+kubectl create service metrics-server-1 metrics-server --tcp=10250
+```
 
 ## Cluster AutoScaler & Pod Identities
 -   Cluster autosclaer is an external component that you need to additionally install on you EKS cluster to automatically scale up and down your cluster.
