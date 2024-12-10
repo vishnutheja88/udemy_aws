@@ -175,3 +175,19 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [x]  longhorn    -   Distributed block storage
 - [x]  Velero      -   Backup and migrate PV for k8s
 - [x]  Akamai Linode (Kubernetes Cluster) less price and less time to deploy compare with any other k8s cloud providers
+
+
+-    Networking: TCP/IP, DNS, HTTP/S, VPN, Load Balancers, Firewalls, Network Protocols, Subnetting
+
+-    Database: SQL vs. NoSQL, ACID Properties, Scalability, Data Modeling
+
+-    Security: Encryption, Authentication, Authorization, OWASP Top 10, Security Policies, Risk Assessment, Compliance Standards (like GDPR, HIPAA).
+
+-    Storage: Block Storage, Object Storage, File Storage, NAS, SAN, SSD vs. HDD.
+
+-    DR: Backup and Restore, Pilot Light, Warm Standby, Multi-site, RTO (Recovery Time Objective), RPO (Recovery Point Objective).
+    
+-    Data Replication: Master-Slave, Peer-to-Peer, Synchronous vs. Asynchronous, Data Consistency, Replication Topologies, Log Shipping.
+
+-    Cache: In-memory Caches (Redis, Memcached), CDN, Cache Invalidation, Write-through vs. Write-back Cache, Cache Hit Ratio.
+
