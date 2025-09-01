@@ -39,7 +39,7 @@ create 3 vms in ec2 as ubuntu (4gb ram) --> select primary-sg
     tar -xvzf kubeaudit_linux_amd64.tar.gz
     sudo mv kubeaudit /usr/local/bin/
     kubeaudit all
-
+```
 
 # Phase 2: (VMs Jenkins, Sonar, Nexus, Monitoring)
 
@@ -77,7 +77,7 @@ create 3 vms in ec2 as ubuntu (4gb ram) --> select primary-sg
     # username: admin
     # password: docker exec -it <containerid> /bin/bash
     # cat sonartype-work/nexus3/admin.password
-
+```
 
 
 - Configure Jenkins server
@@ -110,8 +110,10 @@ create 3 vms in ec2 as ubuntu (4gb ram) --> select primary-sg
     sudo chmod 666 /var/run/docker.sock
     docker pull hello-world
 
+```
 
-    
+
+
 
 
 
